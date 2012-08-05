@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:stretchColumns="*" >
+
+        <include layout="@layout/table_row_header" />
+    </TableLayout>
+
+    <org.spoofer.channels.displays.table.ObservableScrollView
+        android:id="@+id/table_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <TableLayout
+            android:id="@+id/table_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:stretchColumns="*" >
+
+            <include layout="@layout/table_row" />
+
+            <include layout="@layout/table_row" />
+
+            <include layout="@layout/table_row" />
+        </TableLayout>
+    </org.spoofer.channels.displays.table.ObservableScrollView>
+
+</LinearLayout>

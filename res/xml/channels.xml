@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<channels 
+    xmlns="http://www.spoofer.org/channels"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.spoofer.org/channels ../../assets/channels_schema.xsd">
+<!-- Defines all the available Channels -->
+    	
+    <channel name="accelerometer" class="org.spoofer.channels.channel.Accelerometer" >
+        <description>Measures the acceleration force in m/s2 that is applied to a device on all three physical axes (x, y, and z), including the force of gravity.</description>
+    </channel>
+
+    
+    <channel name="gravity" class="org.spoofer.channels.channel.GravitySensor" >
+        <description>Measures the force of gravity in m/s2 that is applied to a device on all three physical axes (x, y, z).</description>
+    </channel>
+
+    <channel name="lightlevel" class="org.spoofer.channels.channel.LightLevel" >
+        <description>Measures ambiant light levels</description>
+    </channel>
+
+    <channel name="magneticSensor" class="org.spoofer.channels.channel.MagneticSensor" >
+        <description>measure the ambient magnetic field in the X, Y and Z axis</description>
+    </channel>
+
+    <channel name="gyroscope" class="org.spoofer.channels.channel.Gyroscope" >
+        <description>measure the rate of rotation around the device's local X, Y and Z axis</description>
+    </channel>
+
+    <channel name="temperature" class="org.spoofer.channels.channel.Temperature" >
+        <description>ambient (room) temperature in degree Celsius.</description>
+    </channel>
+
+    <channel name="proximity" class="org.spoofer.channels.channel.Proximity" >
+        <description>Proximity sensor distance measured in centimeters</description>
+    </channel>
+    
+    <channel name="rotation" class="org.spoofer.channels.channel.Rotation" >
+        <description>rotation vector represents the orientation of the device </description>
+    </channel>
+    
+    <channel name="pressure" class="org.spoofer.channels.channel.Pressure" >
+        <description>Proximity sensor distance measured in centimeters</description>
+    </channel>
+    
+    <channel name="debugchannel" class="org.spoofer.channels.channel.DebugChannel" >
+        <description>Proximity sensor distance measured in centimeters</description>
+    </channel>
+    
+</channels>
